@@ -1,7 +1,159 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-size: 100%;
+}
+
+:root {
+  --ext-primary: #00cbc2;
+  --ext-text: #2f2f2f;
+  --ext-text-light: #4f4f4f;
+  --ext-dark-green: #002d2b;
+  --ext-light-green: #00cbc2;
+  --ext-disabled: #e7e9ee;
+  --ext-border: #E8E6ED;
+  --ext-white: #ffffff;
+  --ext-yellow: #BE9137;
+  --ext-background: #F8FFFD;
+}
+
+.ext_container div,
+.ext_container h1,
+.ext_container h2,
+.ext_container h3,
+.ext_container h4,
+.ext_container h5,
+.ext_container h6,
+.ext_container p,
+.ext_container span,
+.ext_container a,
+.ext_container li,
+.ext_container button {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--ext-text);
+}
+
+.ext_container .btn {
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+.ext_container .btn_primary {
+  color: #ffffff;
+  background: var(--ext-dark-green) !important;
+  border: 1px solid var(--ext-dark-green);
+}
+.ext_container .btn_secondary {
+  color: var(--ext-dark-green);
+  background: var(--ext-white) !important;
+  border: 1px solid var(--ext-dark-green);
+}
+
+.ext_container {
+  padding: 0 24px;
+  min-width: 310px;
+  max-width: 310px;
+  min-height: 400px;
+  max-height: auto;
+  background: var(--ext-background);
+  box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+.ext_container .header {
+  padding: 18px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--ext-border);
+}
+
+.ext_container .header .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.ext_container .header .logo img {
+  width: 40px;
+  height: auto;
+}
+.ext_container .header .logo p {
+  margin-left: 10px;
+  font-size: 1.05em;
+  font-weight: 500;
+  color: var(--ext-dark-green);
+}
+
+.ext_container .header .close img {
+  padding-top: 4px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.ext_container .content {
   text-align: center;
-  min-width: 300px;
-  max-width: 300px;
-  min-height: 300px;
-  max-height: 300px;
+}
+
+.ext_container .content .offer {
+  padding: 16px 0px;
+  border-bottom: 1px solid var(--ext-border);
+}
+.ext_container .content .offer h6 {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 135%;
+  color: var(--ext-text-light)
+}
+.ext_container .content .offer h6 span {
+  font-weight: 500;
+  color: var(--ext-primary);
+}
+.ext_container .content .offer p {
+  margin-top: 16px;
+  font-size: 1.05em;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 135%;
+  color: var(--ext-yellow)
+}
+.ext_container .content .offer button {
+  margin-top: 9px;
+  margin-bottom: 5px;
+  padding: 5px 32px;
+}
+
+.ext_container .content .gain_access {
+  padding: 14px 0px;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 135%;
+  color: var(--ext-text-light);
+  border-bottom: 1px solid var(--ext-border);
+}
+
+.ext_container .content .action {
+  padding: 16px 0px;
+}
+.ext_container .content .action p {
+  margin: 10px 0px;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 135%;
+  color: var(--ext-text-light)
+}
+.ext_container .content .action p span {
+  font-weight: 500;
+  color: var(--ext-primary);
+  cursor: pointer;
+}
+.ext_container .content .action p span:hover {
+  text-decoration: underline;
 }

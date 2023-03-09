@@ -14,9 +14,10 @@
     "default_title": "DMAS Extension",
     "default_icon": "favicon.png"
   },
-  "permissions": [ 
+  "permissions": [
     "activeTab",
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "background": {
     "service_worker": "background.js"
