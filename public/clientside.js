@@ -1,3 +1,3 @@
-alert("hit clientside!");
+console.log("Client side activated!");
 
-console.log("We've reached a CART page!");
+document.createElement("div").setAttribute("id", "root");
